@@ -119,7 +119,7 @@ textarea {
 {
     width: 100%;
     min-height: 100vh;
-    background:url(../img/ariereplan5.jpg) right top no-repeat;
+    background:url(../img/ariereplan9.jpg)center no-repeat;
     background-size: cover;
 
 } 
@@ -241,7 +241,7 @@ header div nav .menu li:hover
 .bienvenu  article p 
 {
     align-self:center;
-    margin:10% 10%; 
+    margin:5% 0%; 
 }
 .bienvenu  article .icone
 {
@@ -390,6 +390,48 @@ footer .copyright
 }
 
 
+/*----------------style catalogue page----------*/
+
+#catalogue 
+{
+    width: 100%;
+    /*height: 100vh;*/
+    background:none;
+    background-color: white;
+}
+#catalogue .motif
+{
+    width: 100%;
+
+}
+#catalogue .motif h1
+{
+    font-family: 'Lobster';
+    text-align: center;
+}
+
+ #catalogue .motif .motifs 
+ {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;    
+ }
+ #catalogue .motif .motifs figure
+ {
+    width:25%;
+ }
+ #catalogue .motif .motifs figure img
+ {
+    width: 100%;
+    height: 80%;
+ }
+ #catalogue .motif .motifs figure span
+ {
+    margin-top: 10px;
+    font-style: italic;
+    margin:0 10%;
+    color:rgb(170,50,55); 
+ }
 
 
 

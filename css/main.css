@@ -141,12 +141,12 @@ header
     text-align: center;
     padding-top: 15px;
 }
-.asdheader h3
+.asdheader h3, footer .adresse h3
 {
     font-family: 'Aclonica';
     font-size: 35px;
 }
-.asdheader h3 span
+.asdheader h3 span, .adresse h3 span
 {
     font-size: 25px;
     font-family:'Almendra';
@@ -256,9 +256,9 @@ header div nav .menu li:hover
     justify-content: space-around;
     padding-top: 20px;
     padding-bottom: 50px;
-    margin-bottom: 10px;
+    /*margin-bottom: 10px;*/
     background-color:rgb(9,11,6);
-    color: white;
+    /*color: white;*/
     height: 450px;
 
 }
@@ -267,8 +267,12 @@ header div nav .menu li:hover
     width: 50%;
     margin:40px 3%;
     height: 100%;
-    line-height: 3em;
+ }   
 
+  .model   article p
+{
+    line-height: 3em;
+    color: white;
 }
 .model figure
 {
@@ -282,6 +286,107 @@ header div nav .menu li:hover
     height: 100%;
     border-radius: 2px;
     top:0px;
+}
+.model article h2
+{
+    color:rgb(170,50,55);
+    font-style: italic;
+    font-size: 18px;
+    margin:0 20%;
+    margin-bottom:  20px;
+    /*text-decoration: underline;*/
+}
+.model article hr
+{
+    
+    width: 48%;
+    margin:0 20%;
+    color: rgb(170,50,55);
+}
+
+#modelblanc 
+{
+   background-color: rgb(190,185,182); 
+}
+
+#modelblanc article p
+{
+     
+    
+    color: black;
+}
+#modelblanc article hr
+{
+    width: 50%;
+    margin:0 20%;
+    color: rgb(170,50,55);
+}
+/*-------------start reserver secton--------*/
+.reserver 
+{
+    width: 100%;
+    height: 120px;
+    display:flex;
+    justify-content: center;
+    /*background-color: red;*/
+    align-items: center;
+}
+.reserver p
+{
+    width: 50%;
+    font-weight: bold;
+    color: black;
+    font-size: 25px;
+    margin:0 -10%;
+}
+.reserver button
+{
+    padding:12px;
+    background-color:rgb(230,89,82);
+    border:none;
+    font-weight: bold;
+    border-radius: 3px;
+
+}
+
+/*-----------------start  style fooetr --------------*/
+footer 
+{
+    width: 100%;
+    
+    color: white;
+
+}
+footer div
+{
+    display:flex;
+    width: 100%;
+    padding-top: 30px;
+    justify-content: space-around;
+    background-color: rgb(37,37,37);
+    height: 150px;
+
+}
+
+footer .adresse
+{  
+    line-height: 2em;
+}
+, footer .formules
+{
+    line-height: 1.5em;
+}
+footer .formules li
+{
+    list-style-type: none;
+
+}
+footer .copyright
+{
+    width: 100%;
+    height: 30px;
+    background-color:rgb(9,11,6);
+    text-align: center; 
 }
 
 

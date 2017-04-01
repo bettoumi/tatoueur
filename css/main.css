@@ -111,10 +111,11 @@ textarea {
 /* ==========================================================================
         Start desktop style
    ========================================================================== */
-
-         /*------main section style------*/
+    /*----------------style Accueil page----------*/
          
-
+    /**********************************************/
+           /*------main section style------*/
+         
 .main
 {
     width: 100%;
@@ -393,7 +394,7 @@ footer .copyright
 
 
 /*----------------style catalogue page----------*/
-
+/**********************************************/
 #catalogue 
 {
     width: 100%;
@@ -436,6 +437,7 @@ footer .copyright
  }
 
 /*----------------style contact page----------*/
+/**********************************************/
 #contactsect
 {
     width: 100%;
@@ -460,7 +462,7 @@ footer .copyright
  color:rgb(255,0,85);
 }
 
-/*----------------style contact page----------*/
+
 #forme
 {
     width: 100%;
@@ -535,8 +537,62 @@ footer .copyright
   margin:20px 2%;
 }
 
+/*----------------style blog page----------*/
+/**********************************************/
+#blogpage
+{
+    width: 100%;
+    background:none;
+    background-color:rgb(37,37,37);  
+}
+#blogpage .blog_part
+{
+    width: 100%;
+    margin: 20px 8%;
 
+}
+#blogpage .blog_part .blog-part1
+{
+  width:50%;
+  color: white;
+  height: 700px;
+  /*border:1px solid red;*/
+  margin: 30px 16%;
 
+}
+#blogpage .blog_part .blog-part1 .figure
+{
+   width: 100%;
+   height:60%;
+   margin:auto;
+   /*border:1px solid green;*/
+   
+
+}
+
+ #blogpage .blog_part .blog-part1 .destarticle
+{
+   width: 100%;
+   margin: auto;
+   /*border:1px solid pink;*/
+   line-height: 1.5em;
+}
+#blogpage .blog_part .blog-part1 .figure figure
+{
+    width: 100%;
+    margin: auto;
+    height: 100%;
+}
+#blogpage .blog_part .blog-part1 .figure figure img
+{
+    width: 100%;
+    height:80% ;
+}
+#blogpage .blog_part .blog-part1 .figure div
+{
+    text-align: center;
+    margin-top: 15px;
+}
 
 
 

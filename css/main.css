@@ -101,15 +101,12 @@ textarea {
 
 
 
-/* ==========================================================================
-        Start mobile style
-   ========================================================================== */
 
 
 
 
 /* ==========================================================================
-        Start desktop style
+                Start desktop style
    ========================================================================== */
     /*----------------style Accueil page----------*/
          
@@ -132,6 +129,8 @@ header
     height:75px;
     background-color:#2D2A26;
     color: white;
+    position: fixed;
+    top:0;
 
 }
 .asdheader
@@ -142,12 +141,12 @@ header
     text-align: center;
     padding-top: 10px;
 }
-.asdheader h3, footer .adresse h3
+.asdheader h3
 {
     font-family: 'Aclonica';
     font-size: 35px;
 }
-.asdheader h3 span, .adresse h3 span
+.asdheader h3 span
 {
     font-size: 25px;
     font-family:'Almendra';
@@ -161,7 +160,7 @@ header div
     padding-top: 15px;
 
 }
-header div nav .menu .imenu
+header div nav  .imenu
 {
     display:none;
 }
@@ -231,8 +230,8 @@ header div nav .menu li:hover
 }
 .bienvenu article
 {
-   align-self: flex-end;
-   margin:-10% 10%;
+   align-self: center;
+   margin:-8% 4%;
    font-size: 50px;
    color: rgb(255,0,85);
    display: flex;
@@ -248,8 +247,8 @@ header div nav .menu li:hover
 }
 .bienvenu  article .icone
 {
-    align-self:flex-end;
-    margin:auto;
+    align-self:center;
+    margin:0 auto;
 }
 /*------ start model section style------*/
 .model
@@ -324,7 +323,7 @@ header div nav .menu li:hover
     margin:0 20%;
     color: rgb(170,50,55);
 }
-/*-------------start reserver secton--------*/
+/*-------------start reserver section--------*/
 .reserver 
 {
     width: 100%;
@@ -356,7 +355,7 @@ header div nav .menu li:hover
 footer 
 {
     width: 100%;
-    
+    padding-top: 20px;
     color: white;
 
 }
@@ -441,25 +440,27 @@ footer .copyright
 #contactsect
 {
     width: 100%;
-    height: 100vh;
+    /*height: 100vh;*/
+    padding-top: 100px;
     background:none;
      background-color:rgb(37,37,37);
     
 }
-#contacthead
+ #contactsect #contacthead
 {
 
     background-color:white;
     color:#2D2A26;
- 
-}
-#contacthead #reseaucontact i, #contacthead nav .menu li a
+
+ }
+
+#contacthead div #reseaucontact i, #contacthead  div  ul li a   
 {
     color:#2D2A26;
 }
 #contacthead #reseaucontact i:hover 
 {
- color:rgb(255,0,85);
+    color:rgb(255,0,85);
 }
 
 
@@ -523,7 +524,7 @@ footer .copyright
     margin-top: 20px;
     color:black;
 }
-.formulaire .inp input:focus ,.formulaire .inp textarea:focus, .formulaire .nomp input:focus
+.formulaire .inp input:focus, .formulaire .inp textarea:focus, .formulaire .nomp input:focus
 {
     box-shadow: 4px 4px 4px rgb(131,100,71);
     border-color: rgb(131,100,71);  
@@ -542,9 +543,28 @@ footer .copyright
 #blogpage
 {
     width: 100%;
+    /*height: 100vh;*/
+    padding-top: 100px;
     background:none;
-    background-color:rgb(37,37,37);  
+     background-color:rgb(37,37,37);
+    
 }
+#bloghead
+{
+
+    background-color:white;
+    color:#2D2A26;
+ 
+}
+#blogpage #bloghead  div #reseaublog a i, #bloghead nav .menu li a
+{
+    color:#2D2A26;
+}
+#bloghead  div #reseaublog i:hover 
+{
+    color:rgb(255,0,85);
+}
+
 #blogpage .blog_part
 {
     width: 100%;
@@ -596,13 +616,297 @@ footer .copyright
 
 
 
+/* ==========================================================================
+                    Start tablette style
+   ========================================================================== */
+@media(max-width: 1024px)
+{
+    /* style index.html for tablette*/
+
+    .asdheader h3
+    {
+        font-family: 'Aclonica';
+        font-size: 25px;
+    }
+    .asdheader h3 span
+    {
+        font-size: 18px;
+        font-family:'Almendra';
+        color:rgb(255,0,85);
+    }
+    .bienvenu h1
+    {
+        font-size: 40px;
+      
+        margin:23% 2%;
+
+    }
+    .bienvenu article
+    {
+        align-self: center;
+        margin:-8% 4%;
+        font-size: 40px;
+        color: rgb(255,0,85);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+   
+
+}
+    .bienvenu  article p 
+    {
+        align-self:center;
+        margin:5% 0%; 
+    }
+    .bienvenu  article .icone
+    {
+        align-self:center;
+        margin:0 auto;
+    }
+    .reserver p
+    {
+        width: 40%;
+        
+        font-size: 18px;
+        margin:0 -5%;
+    }
+    .reserver button
+    {
+        padding:8px;
+    }
+
+    /* style catalogue.html for tablette*/
+
+    #catalogue .motif .motifs .nontablette
+    {
+        display:none;
+    }
+    #catalogue .motif .motifs figure 
+    {
+        width:33%;
+    }
+    footer div .adresse, footer div .formules
+    {
+        font-size: 15px; 
+    }
+    footer .copyright
+    {
+        font-size: 12px;
+    }
+   /* style contact.html for tablette*/
+
+} 
+/* ==========================================================================
+        Start mobile style
+   ========================================================================== */
+@media (max-width: 750px)
+{
+   /****** style index.html for mobile******/ 
+   .asdheader
+   {
+     padding-bottom: 20px;
+   }
+
+    .asdheader h3
+    {
+        font-family: 'Aclonica';
+        font-size: 18px;
+    }
+
+    .asdheader h3 span
+    {
+        font-size: 14px;
+        font-family:'Almendra';
+        color:rgb(255,0,85);
+    }
+
+    .bienvenu h1
+    {
+        font-size: 30px;
+        margin:23% 2%;
+    }
+
+    .bienvenu article
+    {
+        
+        margin:-8% 3%;
+        font-size: 25px;
+        
+    }
+
+    header div nav  .imenu
+    {
+        display:block;
+        color: white;
+        float: right;
+        margin-right: 50px;
+    }
+
+    header div nav .menu 
+    {
+        
+       display:none;
+        
+    }
+    .model
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /*align-content: center;*/
+    padding-top: 10px;
+    padding-bottom: 50px;
+    /*margin-bottom: 10px;*/
+    background-color:rgb(9,11,6);
+    /*color: white;*/
+    height:600px;
+
+}
+.model article
+{
+    width: 90%;
+    margin:20px auto;
+    height: 40%;
+ }   
+
+  .model   article p
+{
+    line-height: 1.2em;
+    color: white;
+}
+.model   article h2
+{
+    font-size: 15px;
+}
+.model figure
+{
+    width: 95%;
+    height: 60%;
+    margin: 0 auto;
+
+}
+.model figure img
+{
+    width: 95%;
+    height: 100%;
+    border-radius: 2px;
+    /*margin:0 -2.5%;*/
+    
+}
+    /*style section reserver in index.html*/
+.reserver 
+{
+    width: 100%;
+    height: 120px;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    /*background-color: red;*/
+    
+}
+.reserver p
+{
+    width: 49%;
+    font-weight: bold;
+    color: black;
+    font-size: 12px;
+    margin:20px 2%;
+   
+}
+.reserver button
+{
+    padding:8px;
+    font-size: 10px;
+    background-color:rgb(230,89,82);
+    border:none;
+    font-weight: bold;
+    border-radius: 3px;
+    width: 49%;
+
+}   
+footer div .adresse, footer div .formules
+{
+   font-size: 13px; 
+}
+ footer .copyright
+ {
+    font-size: 10px;
+ }
+/****** style catalogue.html for mobile******/ 
+    #catalogue .motif .motifs .nonmobile
+
+    {
+        display:none;
+    }
+    #catalogue .motif .motifs figure 
+    {
+        width:50%;
+    }
+/****** style blog.html for mobile******/
+    #blogicone
+    {
+        color:black;
+    } 
+    #blogpage .blog_part
+    {
+        width: 100%;
+        margin: 20px 8%;
+
+    }
+    #blogpage .blog_part .blog-part1
+    {
+        width:75%;
+        margin: 30px 5%;
+
+    }
+    
+ #blogpage .blog_part .blog-part1 .destarticle
+    {   
+   
+        line-height: 1.2em;
+    }
+
+   /****** style contact.html for mobile******/  
+    #forme
+    {
+        width: 100%;
+        display:flex;
+        flex-direction: column;
+
+        justify-content: space-between;
+        /*align-content: center;*/
+        padding-top: 20px;
+   
+    
+    
+}
 
 
+.formulaire
+ {
+    width:90%;
+    margin: 0 15%;
+      
+   
+ }
+ .map{
+    width: 70%;
+ }
+.map iframe
+{
+    margin: 0 21%;
+    text-align: center;
+}
+ .formulaire form
+ {
+    width:100%;
+   
+    
+    border-radius: 5px;
 
-
-
-
-
+ }
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
